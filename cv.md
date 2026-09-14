@@ -21,7 +21,7 @@ Additional: Python, PowerShell, and Linux server administration.
 ![Codewars badge](https://www.codewars.com/users/overclocked555/badges/small)
 
 ## Code examples
-https://github.com/hohanov/
+[https://github.com/hohanov/](https://github.com/hohanov/)
 
 ## Education
 Course in the specialty programmer-administrator.
