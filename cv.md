@@ -36,3 +36,5 @@ EPAM english test results:
 Rate: A2+
 
 Rate description: Pre-Intermediate +
+
+Daily reading of technical documentation in English. Several weeks of immersive English communication during holidays.
