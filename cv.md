@@ -3,7 +3,7 @@
 ### Full Stack Middle Developer
 
 ## Contacts
-  - Discord: overclocked#7177
+  - Discord: over_locked
   - LinkedIn: [https://www.linkedin.com/in/hohanoff/](https://www.linkedin.com/in/hohanoff/)
 
 ## Summary
