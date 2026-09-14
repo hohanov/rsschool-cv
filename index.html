@@ -1,9 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Resume</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
 </head>
-<body></body>
+
+<body>
+    <main>
+        <article>
+            <header>
+                <div>
+                    <h1 id="aleksandr-khokhanov">Aleksandr Khokhanov</h1>
+                    <h2>Full Stack Middle Developer</h2>
+                </div>
+                <img class="photo" src="DSC_0562.JPG" alt="Personal photo">
+            </header>
+            <nav>
+                <ul>
+                    <li><a href="#contacts">Contacts</a></li>
+                    <li><a href="#summary">Summary</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#code-examples">Code examples</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#english">English</a></li>
+                </ul>
+            </nav>
+            <h2 id="contacts">Contacts</h2>
+            <ul>
+                <li>Discord: over_locked</li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/hohanoff/">https://www.linkedin.com/in/hohanoff/</a></li>
+            </ul>
+            <h2 id="summary">Summary</h2>
+            <p>Since 2009, in system administration.</p>
+            <p>Since 2020, commercial web development experience in CRM and e-commerce solutions.</p>
+            <p>Currently studying at Rolling Scopes School to consolidate my knowledge and gain experience with technical interviews.</p>
+            <h2 id="skills">Skills</h2>
+            <ul>
+                <li>Core expertise: Vue.js (JavaScript) and Laravel (PHP).</li>
+                <li>Additional: Python, PowerShell, and Linux server administration.</li>
+            </ul>
+            <img src="https://www.codewars.com/users/overclocked555/badges/large" alt="Codewars badge">
+            <h2 id="code-examples">Code examples</h2>
+            <code>
+function nthFibo(n) {<br>
+&nbsp;&nbsp;// Return the n-th number in the Fibonacci Sequence<br>
+&nbsp;&nbsp;let seq = [0, 1];<br>
+&nbsp;&nbsp;while (n > seq.length) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;seq.push(seq[seq.length - 1] + seq[seq.length - 2]);<br>
+&nbsp;&nbsp;}<br>
+&nbsp;&nbsp;return seq[n - 1];<br>
+}
+            </code>
+            <p>More: <a href="https://github.com/hohanov/">https://github.com/hohanov/</a></p>
+            <h2 id="education">Education</h2>
+            <p>Course in the specialty programmer-administrator.</p>
+            <p>Linux Maintenance Course.</p>
+            <p>The Rolling Scopes School — JavaScript / Front-end Course 2020Q3 Stage 1.</p>
+            <h2 id="english">English</h2>
+            <p>EPAM english test results: </p>
+            <p>Rate: A2+</p>
+            <p>Rate description: Pre-Intermediate +</p>
+            <p>Daily reading of technical documentation in English. Several weeks of immersive English communication during holidays.</p>
+
+        </article>
+    </main>
+    <footer>
+        © 2026. Aleksandr Khokhanov.
+        <a href="https://github.com/hohanov/">https://github.com/hohanov/</a>
+
+        <a href="https://rs.school/courses/javascript"><img src="https://raw.githubusercontent.com/rolling-scopes-school/tasks/60930096a399442cbcc12500d33e4fa8e820440f/fullstack-engineering/tasks/cv/assets/rs-school-logo.svg" alt="The Rolling Scopes School" width="150"></a>
+    </footer>
+</body>
+
 </html>
