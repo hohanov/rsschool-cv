@@ -4,77 +4,364 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <title>Aleksandr Khokhanov | Resume</title>
+    <link rel="preconnect" href="https://fonts.bunny.net">
+    <link href="https://fonts.bunny.net/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
 </head>
 
 <body>
-    <main>
-        <article>
-            <header>
-                <div>
-                    <h1 id="aleksandr-khokhanov">Aleksandr Khokhanov</h1>
-                    <h2>Full Stack Middle Developer</h2>
+    <div class="min-h-dvh min-w-[320px] bg-cream-100 text-cream-900 dark:bg-cream-950 dark:text-cream-200">
+        <header class="sticky top-0 z-20 bg-white/80 backdrop-blur border-b border-cream-300 dark:border-white/10">
+            <div class="mx-auto flex h-16 max-w-6xl items-center justify-between px-5 lg:px-10">
+                <!-- Wordmark -->
+                <span class="inline-flex items-baseline gap-1 font-medium tracking-tight">
+                    <strong>Aleksandr Khokhanov</strong>
+                </span>
+                <!-- END Wordmark -->
+
+                <!-- Right side: nav + actions -->
+                <div class="flex items-center gap-2 sm:gap-5">
+                    <nav class="hidden items-center md:flex">
+                        <ul class="flex flex-row gap-4 list-none">
+                            <li class="text-sm font-medium text-cream-700 hover:text-cream-900 dark:text-cream-500 dark:hover:text-white"><a href="#skills">Skills</a></li>
+                            <li class="text-sm font-medium text-cream-700 hover:text-cream-900 dark:text-cream-500 dark:hover:text-white"><a href="#code-examples">Code examples</a></li>
+                            <li class="text-sm font-medium text-cream-700 hover:text-cream-900 dark:text-cream-500 dark:hover:text-white"><a href="#experience">Experience</a></li>
+                            <li class="text-sm font-medium text-cream-700 hover:text-cream-900 dark:text-cream-500 dark:hover:text-white"><a href="#education">Education</a></li>
+                            <li class="text-sm font-medium text-cream-700 hover:text-cream-900 dark:text-cream-500 dark:hover:text-white"><a href="#contacts">Contacts</a></li>
+                        </ul>
+                    </nav>
                 </div>
-                <img class="photo" src="DSC_0562.JPG" alt="Personal photo">
-            </header>
-            <nav>
-                <ul>
-                    <li><a href="#contacts">Contacts</a></li>
-                    <li><a href="#summary">Summary</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#code-examples">Code examples</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#english">English</a></li>
-                </ul>
-            </nav>
-            <h2 id="contacts">Contacts</h2>
-            <ul>
-                <li>Discord: over_locked</li>
-                <li>LinkedIn: <a href="https://www.linkedin.com/in/hohanoff/">https://www.linkedin.com/in/hohanoff/</a></li>
-            </ul>
-            <h2 id="summary">Summary</h2>
-            <p>Since 2009, in system administration.</p>
-            <p>Since 2020, commercial web development experience in CRM and e-commerce solutions.</p>
-            <p>Currently studying at Rolling Scopes School to consolidate my knowledge and gain experience with technical interviews.</p>
-            <h2 id="skills">Skills</h2>
-            <ul>
-                <li>Core expertise: Vue.js (JavaScript) and Laravel (PHP).</li>
-                <li>Additional: Python, PowerShell, and Linux server administration.</li>
-            </ul>
-            <img src="https://www.codewars.com/users/overclocked555/badges/large" alt="Codewars badge">
-            <h2 id="code-examples">Code examples</h2>
-            <code>
-function nthFibo(n) {<br>
-&nbsp;&nbsp;// Return the n-th number in the Fibonacci Sequence<br>
-&nbsp;&nbsp;let seq = [0, 1];<br>
-&nbsp;&nbsp;while (n > seq.length) {<br>
-&nbsp;&nbsp;&nbsp;&nbsp;seq.push(seq[seq.length - 1] + seq[seq.length - 2]);<br>
-&nbsp;&nbsp;}<br>
-&nbsp;&nbsp;return seq[n - 1];<br>
+            </div>
+        </header>
+        <main class="mx-auto max-w-6xl px-5 lg:px-10">
+            <!-- Hero band -->
+            <section class="border-b border-cream-300 py-20 dark:border-white/10">
+                <div class="grid gap-12 lg:grid-cols-12 lg:gap-16">
+                    <!-- Left: identity -->
+                    <div class="lg:col-span-7">
+                        <h1 class="mt-6 text-4xl font-normal leading-[1.05] tracking-[-0.03em] sm:text-5xl md:text-6xl lg:text-7xl">
+                            Aleksandr Khokhanov<span class="text-brand-500">.</span>
+                        </h1>
+                        <h2>Full Stack Middle Developer</h2>
+                        <p class="mt-6 max-w-xl text-base/relaxed text-cream-700 dark:text-cream-500">
+                            Developer with a strong focus on data security and accurate business metrics. <br>
+                            Experienced in CRM and e-commerce development.
+                        </p>
+
+                        <!-- CTAs -->
+                        <div class="mt-8 flex flex-wrap items-center gap-3">
+                            <a href="#contacts" class="inline-flex h-10 items-center gap-2 rounded-md bg-brand-500 px-5 text-sm font-medium text-white hover:bg-brand-600">
+                                Get in touch
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-4">
+                                    <path d="M5 12h14"></path>
+                                    <path d="m12 5 7 7-7 7"></path>
+                                </svg>
+                            </a>
+                            <a href="#experience" class="inline-flex h-10 items-center gap-2 rounded-md border border-cream-400 bg-white px-5 text-sm font-medium text-cream-900 hover:bg-cream-50 dark:border-white/15 dark:bg-transparent dark:text-white dark:hover:bg-white/5">
+                                View experience
+                            </a>
+                        </div>
+                        <!-- END CTAs -->
+                    </div>
+                    <!-- END Left: identity -->
+
+                    <!-- Right: portrait card -->
+                    <div class="lg:col-span-5">
+                        <div class="relative overflow-hidden rounded-xl border border-cream-300 bg-white dark:border-white/10 dark:bg-white/5">
+                            <img src="DSC_0562.JPG" class="portrait aspect-4/5 w-full object-cover" alt="Aleksandr Khokhanov portrait">
+                            <!-- Caption pill overlay -->
+                            <div class="absolute top-4 left-4 right-4 flex justify-between">
+                                <span class="inline-flex items-center gap-1.5 rounded-full bg-white/95/25 px-2.5 py-1 text-xs font-semibold uppercase tracking-tight text-cream-900 dark:text-cream-100 backdrop-blur">
+                                    <span class="size-1.5 rounded-full bg-mint"></span>
+                                    Online
+                                </span>
+                                <span class="rounded-full bg-white/95/25 px-2.5 py-1 text-xs font-semibold uppercase tracking-tight text-cream-900 dark:text-cream-100 backdrop-blur">
+                                    Est. 2009
+                                </span>
+                            </div>
+                            <!-- END Caption pill overlay -->
+                        </div>
+                    </div>
+                    <!-- END Right: portrait card -->
+                </div>
+            </section>
+            <!-- END Hero -->
+
+            <!-- About / Tech stack as code block -->
+            <section id="skills" class="border-b border-cream-300 py-20 dark:border-white/10">
+                <span class="text-[11px] font-semibold uppercase tracking-[0.08em] text-cream-600 dark:text-cream-500">01 · Skills</span>
+                <h2 class="mt-3 text-3xl font-normal leading-tight tracking-tight md:text-4xl">
+                    Build smart, keep it secure.
+                </h2>
+                <div class="grid gap-12 lg:grid-cols-12">
+                    <div class="lg:col-span-6">
+
+                        <div class="mt-5 text-md/relaxed text-cream-700 dark:text-cream-500 space-y-3">
+                            <strong>Core expertise:</strong>
+                            <ul class="list-disc list-inside">
+                                <li>Vue.js (JavaScript)</li>
+                                <li>Laravel (PHP)</li>
+                                <li>Linux server administration</li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <div class="lg:col-span-6">
+
+                        <div class="mt-5 text-md/relaxed text-cream-700 dark:text-cream-500 space-y-3">
+                            <strong>Additional:</strong>
+                            <ul class="list-disc list-inside">
+                                <li>Python</li>
+                                <li>PowerShell</li>
+                                <li>English: A2+ (Pre-Intermediate +) by EPAM test</li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+
+                <img class="mt-15 mx-auto" src="https://www.codewars.com/users/overclocked555/badges/large" alt="Codewars badge">
+            </section>
+            <!-- END About -->
+
+            <section id="code-examples" class="border-b border-cream-300 py-20 dark:border-white/10">
+                <div class="grid gap-12 lg:grid-cols-12">
+                    <div class="lg:col-span-4">
+                        <span class="text-[11px] font-semibold uppercase tracking-[0.08em] text-cream-600 dark:text-cream-500">02 · Code examples</span>
+                        <h2 class="mt-3 text-3xl font-normal leading-tight tracking-tight md:text-4xl">
+                            Calm code, clear systems.
+                        </h2>
+                        <p class="mt-5 text-sm/relaxed text-cream-700 dark:text-cream-500">
+                            I build CRM systems, e-commerce platforms, and dashboards that address specific business needs, with a strong focus on data security and maintaining secure, resilient IT systems.
+                            Regularly contribute to open-source projects I rely on in my work.
+                        </p>
+                        <a href="https://github.com/hohanov/" class="text-sm font-medium text-cream-900 underline decoration-cream-400 underline-offset-4 hover:decoration-cream-900 dark:text-white dark:decoration-white/30 dark:hover:decoration-white">See GitHub profile →</a>
+                    </div>
+                    <!-- END Left: about -->
+
+                    <!-- Code block -->
+                    <div class="min-w-0 lg:col-span-8">
+                        <div class="overflow-hidden rounded-xl border border-cream-300 bg-white dark:border-white/10 dark:bg-white/5">
+                            <div class="flex items-center gap-2 border-b border-cream-300 px-4 py-3 dark:border-white/10">
+                                <span class="size-2.5 rounded-full bg-peach"></span>
+                                <span class="size-2.5 rounded-full bg-gold"></span>
+                                <span class="size-2.5 rounded-full bg-mint"></span>
+                                <span class="ml-3 font-mono text-xs text-cream-600 dark:text-cream-500">resources/js/plugins/axios.js</span>
+                            </div>
+                            <pre class="overflow-x-auto px-5 py-5 font-mono text-[13px] leading-relaxed text-cream-900 dark:text-cream-200">// Laravel validation error messages
+if (error.response?.status === 422) {
+  window.$snack.error(
+    (error.response.data.errors !== undefined
+      && Object.values(error.response.data.errors).flat().join(" "))
+    || error.response.data.message
+    || "The given data was invalid."
+  )
+  return Promise.reject(error)
 }
-            </code>
-            <p>More: <a href="https://github.com/hohanov/">https://github.com/hohanov/</a></p>
-            <h2 id="education">Education</h2>
-            <p>Course in the specialty programmer-administrator.</p>
-            <p>Linux Maintenance Course.</p>
-            <p>The Rolling Scopes School — JavaScript / Front-end Course 2020Q3 Stage 1.</p>
-            <h2 id="english">English</h2>
-            <p>EPAM english test results: </p>
-            <p>Rate: A2+</p>
-            <p>Rate description: Pre-Intermediate +</p>
-            <p>Daily reading of technical documentation in English. Several weeks of immersive English communication during holidays.</p>
+</pre>
+                        </div>
 
-        </article>
-    </main>
-    <footer>
-        © 2026. Aleksandr Khokhanov.
-        <a href="https://github.com/hohanov/">https://github.com/hohanov/</a>
+                    </div>
+                    <!-- END Code block -->
+                </div>
+            </section>
+            <!-- Experience -->
+            <section id="experience" class="border-b border-cream-300 py-20 dark:border-white/10">
+                <div class="grid gap-12 lg:grid-cols-12">
+                    <div class="lg:col-span-4">
+                        <span class="text-[11px] font-semibold uppercase tracking-[0.08em] text-cream-600 dark:text-cream-500">03 · Experience</span>
+                        <h2 class="mt-3 text-3xl font-normal leading-tight tracking-tight md:text-4xl">
+                            A practiced hand.
+                        </h2>
+                        <p class="mt-5 text-sm/relaxed text-cream-700 dark:text-cream-500">
+                            Nearly two decades in IT, helping clients focus on business goals rather than the tools and technology needed to achieve them.
+                        </p>
+                    </div>
 
-        <a href="https://rs.school/courses/javascript"><img src="https://raw.githubusercontent.com/rolling-scopes-school/tasks/60930096a399442cbcc12500d33e4fa8e820440f/fullstack-engineering/tasks/cv/assets/rs-school-logo.svg" alt="The Rolling Scopes School" width="150"></a>
-    </footer>
+                    <ul class="space-y-3 lg:col-span-8">
+                        <li class="rounded-xl border border-cream-300 bg-white p-6 dark:border-white/10 dark:bg-white/5">
+                            <div class="flex flex-wrap items-baseline justify-between gap-3">
+                                <h3 class="text-[1.375rem] font-normal leading-snug tracking-tight">
+                                    System Administrator
+                                </h3>
+                                <span class="font-mono text-xs text-cream-600 dark:text-cream-500">2009 - Now</span>
+                            </div>
+                            <p class="mt-1 text-sm font-medium text-brand-500">
+                                Several organizations
+                            </p>
+                            <p class="mt-3 text-sm/relaxed text-cream-700 dark:text-cream-500">
+                                Providing IT support and maintaining a large fleet of office computers, networks, and SMB servers.
+                            </p>
+                        </li>
+
+                        <li class="rounded-xl border border-cream-300 bg-white p-6 dark:border-white/10 dark:bg-white/5">
+                            <div class="flex flex-wrap items-baseline justify-between gap-3">
+                                <h3 class="text-[1.375rem] font-normal leading-snug tracking-tight">
+                                    Freelance Web Developer
+                                </h3>
+                                <span class="font-mono text-xs text-cream-600 dark:text-cream-500">2020 - Now</span>
+                            </div>
+                            <p class="mt-1 text-sm font-medium text-brand-500">
+                                Independent
+                            </p>
+                            <p class="mt-3 text-sm/relaxed text-cream-700 dark:text-cream-500">
+                                Commercial web development experience in CRM and e-commerce solutions.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!-- END Experience -->
+
+            <!-- Education -->
+            <section id="education" class="border-b border-cream-300 py-20 dark:border-white/10">
+                <div class="grid gap-12 lg:grid-cols-12">
+                    <div class="lg:col-span-4">
+                        <span class="text-[11px] font-semibold uppercase tracking-[0.08em] text-cream-600 dark:text-cream-500">04 · Education</span>
+                        <h2 class="mt-3 text-3xl font-normal leading-tight tracking-tight md:text-4xl">
+                            The foundation.
+                        </h2>
+                        <p class="mt-5 text-sm/relaxed text-cream-700 dark:text-cream-500">
+                            Information technology, with a continuous habit of
+                            relearning the basics every year.
+                        </p>
+                    </div>
+
+                    <ol class="divide-y divide-cream-300 lg:col-span-8 dark:divide-white/10">
+                        <li class="grid grid-cols-12 gap-4 py-5 first:pt-0">
+                            <div class="col-span-12 sm:col-span-3">
+                                <span class="font-mono text-xs text-cream-600 dark:text-cream-500">2005 - 2008</span>
+                            </div>
+                            <div class="col-span-12 sm:col-span-9">
+                                <h3 class="text-[1.375rem] font-normal leading-snug tracking-tight">
+                                    Software Developer and System Administrator
+                                </h3>
+                                <p class="mt-1 text-sm font-medium text-cream-700 dark:text-cream-500">
+                                    MEPhI Correspondence Technical College
+                                </p>
+                                <p class="mt-3 text-sm/relaxed text-cream-700 dark:text-cream-500">
+                                    Cultivated the skills and knowledge that form the bedrock
+                                    of my expertise in system administration and software development.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="grid grid-cols-12 gap-4 py-5">
+                            <div class="col-span-12 sm:col-span-3">
+                                <span class="font-mono text-xs text-cream-600 dark:text-cream-500">2009</span>
+                            </div>
+                            <div class="col-span-12 sm:col-span-9">
+                                <h3 class="text-[1.375rem] font-normal leading-snug tracking-tight">
+                                    Linux Maintenance Course
+                                </h3>
+                                <p class="mt-1 text-sm font-medium text-cream-700 dark:text-cream-500">
+                                    IT Academy, Moscow
+                                </p>
+                                <p class="mt-3 text-sm/relaxed text-cream-700 dark:text-cream-500">
+                                    Honed skills by delving deeper into advanced concepts and
+                                    emerging technologies in Linux maintenance.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="grid grid-cols-12 gap-4 py-5 last:pb-0">
+                            <div class="col-span-12 sm:col-span-3">
+                                <span class="font-mono text-xs text-cream-600 dark:text-cream-500">2020</span>
+                            </div>
+                            <div class="col-span-12 sm:col-span-9">
+                                <h3 class="text-[1.375rem] font-normal leading-snug tracking-tight">
+                                    JavaScript / Front-end Course 2020 Q3 Stage 1
+                                </h3>
+                                <p class="mt-1 text-sm font-medium text-cream-700 dark:text-cream-500">
+                                    The Rolling Scopes School
+                                </p>
+                                <p class="mt-3 text-sm/relaxed text-cream-700 dark:text-cream-500">
+                                    Dive deep into the world of JavaScript, TypeScript, and Frontend development. Understand the core concepts.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="grid grid-cols-12 gap-4 py-5 last:pb-0">
+                            <div class="col-span-12 sm:col-span-3">
+                                <span class="font-mono text-xs text-cream-600 dark:text-cream-500">2026 - Now</span>
+                            </div>
+                            <div class="col-span-12 sm:col-span-9">
+                                <h3 class="text-[1.375rem] font-normal leading-snug tracking-tight">
+                                    Full-Stack JavaScript Course 2026 Q3
+                                </h3>
+                                <p class="mt-1 text-sm font-medium text-cream-700 dark:text-cream-500">
+                                    The Rolling Scopes School
+                                </p>
+                                <p class="mt-3 text-sm/relaxed text-cream-700 dark:text-cream-500">
+                                    Currently studying to consolidate my knowledge and gain experience with technical interviews.
+                                </p>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+            </section>
+            <!-- END Education -->
+
+            <!-- Contact / Social -->
+            <section id="contacts" class="py-20">
+                <div class="grid gap-12 lg:grid-cols-12">
+                    <div class="lg:col-span-4">
+                        <span class="text-[11px] font-semibold uppercase tracking-[0.08em] text-cream-600 dark:text-cream-500">05 · Contacts</span>
+                        <h2 class="mt-3 text-3xl font-normal leading-tight tracking-tight md:text-4xl">
+                            Let's build something quiet and useful.
+                        </h2>
+                        <p class="mt-5 text-sm/relaxed text-cream-700 dark:text-cream-500">
+                            Open to freelance, contract, and product-team roles. Usually
+                            reply within a day.
+                        </p>
+                    </div>
+                    <!-- END Left: contact intro -->
+                    <div class="hidden lg:block lg:col-span-4"></div>
+                    <!-- Contact details list -->
+                    <div class="lg:col-span-4">
+                        <ul class="mt-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-3">
+                            <li>
+                                <div class="flex items-center justify-between rounded-xl border border-cream-300 bg-white px-5 py-4 hover:bg-cream-50 dark:border-white/10 dark:bg-white/5 dark:hover:bg-white/10">
+                                    <span class="text-[11px] font-semibold uppercase tracking-[0.08em] text-cream-600 dark:text-cream-500">Discord</span>
+                                    <p class="mt-1 text-sm font-medium">over_locked</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/hohanoff/" class="flex items-center justify-between rounded-xl border border-cream-300 bg-white px-5 py-4 hover:bg-cream-50 dark:border-white/10 dark:bg-white/5 dark:hover:bg-white/10">
+                                    <div>
+                                        <span class="text-[11px] font-semibold uppercase tracking-[0.08em] text-cream-600 dark:text-cream-500">LinkedIn</span>
+                                        <p class="mt-1 text-sm font-medium">Work profile</p>
+                                    </div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="size-4 text-cream-600 dark:text-cream-500">
+                                        <path d="M7 7h10v10"></path>
+                                        <path d="M7 17 17 7"></path>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- END Social links -->
+                </div>
+            </section>
+            <!-- END Contact / Social -->
+        </main>
+        <footer class="border-t border-cream-300 dark:border-white/10">
+            <div class="mx-auto flex max-w-6xl flex-col items-start justify-between gap-3 px-5 py-8 text-sm text-cream-700 sm:flex-row sm:items-center lg:px-10 dark:text-cream-500">
+                <p class="flex">
+                    <span>
+                        ©
+                        <script>
+                            document.write(new Date().getFullYear());
+                        </script>
+                        · Aleksandr Khokhanov ·
+                    </span>
+
+                    <a href="https://github.com/hohanov/" class="ms-2"><img src="GitHub_Invertocat_Black.png" alt="Github" width="20"></a>
+                </p>
+
+                <a href="https://rs.school/courses/javascript"><img src="https://raw.githubusercontent.com/rolling-scopes-school/tasks/60930096a399442cbcc12500d33e4fa8e820440f/fullstack-engineering/tasks/cv/assets/rs-school-logo.svg" alt="The Rolling Scopes School" width="54"></a>
+            </div>
+        </footer>
+    </div>
+
 </body>
 
 </html>
